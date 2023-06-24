@@ -23,7 +23,7 @@ class CuentaTest {
 
     @BeforeEach
     void setUp() {
-        this.cuenta = new Cuenta("Camila", 100000);
+        this.cuenta = new Cuenta("Pablo", 100000);
     }
 
     @Test
