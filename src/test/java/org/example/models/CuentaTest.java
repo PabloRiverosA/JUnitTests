@@ -29,11 +29,11 @@ class CuentaTest {
     @Test
     @DisplayName("Test Nombre Cuenta:")
     void testNombreCuenta() {
-        String nombreEsperado= "Maria";
+        String nombreEsperado= "Pablo";
         String real= cuenta.getPersona();
         assertAll(
                 ()-> assertEquals(nombreEsperado, real, "El nombre obtenido no es el esperado"),
-                ()-> assertTrue(real.equals("lAURA"))
+                ()-> assertTrue(real.equals("Feña"))
         );
     }
 
@@ -48,7 +48,7 @@ class CuentaTest {
 
     @Test
     void testTransfer() {
-        Cuenta cuenta2 =  new Cuenta("Rogrigo", 10000);
+        Cuenta cuenta2 =  new Cuenta("Pollin", 10000);
         Banco BCI= new Banco("BCI");
         BCI.addCuenta(cuenta2);
         BCI.addCuenta(cuenta);
